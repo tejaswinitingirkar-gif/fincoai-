@@ -1,0 +1,188 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #4F46E5;
+  --secondary: #0D9488;
+  
+  /* Light Theme Variables - High Contrast Premium */
+  --bg-main: 248 250 252; /* slate-50 */
+  --bg-card: 255 255 255; /* white */
+  --bg-sidebar: 255 255 255; /* white */
+  --bg-navbar: 255 255 255;
+  --bg-input: 241 245 249; /* slate-100 */
+  
+  --border-color: 226 232 240; /* slate-200 */
+  
+  --text-main: 15 23 42; /* slate-900 */
+  --text-muted: 71 85 105; /* slate-600 */
+  --text-dim: 148 163 184; /* slate-400 */
+  
+  --surface-color: #ffffff;
+  --toast-bg: #ffffff;
+  --toast-text: #0f172a;
+  --glass-bg: rgba(255, 255, 255, 0.8);
+  --glass-border: rgba(0, 0, 0, 0.08);
+
+  --success: #10B981;
+  --error: #E11D48;
+  --warning: #F59E0B;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+.dark {
+  /* Dark Theme Variables - Premium Fintech Deep Black */
+  --bg-main: 5 7 13; /* #05070D */
+  --bg-card: 10 15 31; /* #0A0F1F */
+  --bg-sidebar: 10 15 31; /* #0A0F1F */
+  --bg-navbar: 5 7 13;
+  --bg-input: 15 23 42; /* slate-900 */
+  
+  --border-color: 30 41 59; /* #1E293B */
+  
+  --text-main: 241 245 249; /* slate-100 */
+  --text-muted: 148 163 184; /* slate-400 */
+  --text-dim: 71 85 105; /* slate-600 */
+  
+  --surface-color: #0A0F1F;
+  --toast-bg: #1e293b;
+  --toast-text: #ffffff;
+  --glass-bg: rgba(10, 15, 31, 0.8);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --shadow-color: rgba(0, 0, 0, 0.4);
+}
+
+@layer base {
+  body {
+    background-color: rgb(var(--bg-main));
+    color: rgb(var(--text-main));
+    @apply font-sans selection:bg-primary/30 selection:text-primary;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    transition: background-color 0.3s, color 0.3s;
+  }
+}
+
+@layer components {
+  /* Premium Animations */
+  @keyframes shimmer {
+    0% { transform: translateX(-200%); }
+    100% { transform: translateX(200%); }
+  }
+
+  @keyframes pulse-soft {
+    0%, 100% { opacity: 0.5; transform: scale(1); }
+    50% { opacity: 0.8; transform: scale(1.02); }
+  }
+
+  /* Refined UI Utilities */
+  .glass-panel {
+    background-color: var(--glass-bg);
+    backdrop-filter: blur(24px);
+    border: 1px solid var(--glass-border);
+    @apply shadow-2xl;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .glass-panel:hover {
+    border-color: var(--primary);
+    @apply shadow-primary/10;
+    transform: translateY(-6px);
+  }
+
+  .btn-primary {
+    @apply relative bg-primary text-white font-bold rounded-premium transition-all duration-300 overflow-hidden shadow-lg shadow-primary/20 flex items-center justify-center gap-2;
+  }
+
+  .btn-primary:hover {
+    @apply shadow-xl shadow-primary/30 brightness-110;
+    transform: translateY(-2px) scale(1.03);
+  }
+
+  .btn-primary:active {
+    @apply scale-95;
+  }
+
+  .input-premium {
+    background-color: rgb(var(--bg-main));
+    border-color: rgb(var(--border-color));
+    color: rgb(var(--text-main));
+    @apply w-full border rounded-xl py-4 px-6 placeholder-slate-500 focus:outline-none focus:border-primary/50 focus:ring-4 focus:ring-primary/10 transition-all duration-300 shadow-sm;
+  }
+
+  .rounded-premium {
+    border-radius: 1.5rem;
+  }
+
+  /* Text Glows */
+  .text-glow {
+    text-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
+  }
+
+  .nav-item {
+    color: rgb(var(--text-muted));
+    @apply flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-300 hover:bg-primary/5 cursor-pointer;
+  }
+  .nav-item:hover {
+    color: var(--primary);
+  }
+
+  .nav-item-active {
+    @apply flex items-center gap-3 px-4 py-3 rounded-xl bg-primary text-white shadow-lg shadow-primary/30;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(var(--bg-main));
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--border-color));
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Recharts Customization */
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  stroke: rgb(var(--border-color));
+  opacity: 0.2;
+}
+
+.recharts-tooltip-wrapper .recharts-default-tooltip {
+  background-color: rgb(var(--bg-card)) !important;
+  border-color: rgb(var(--border-color)) !important;
+  color: rgb(var(--text-main)) !important;
+  @apply !rounded-xl !shadow-glass !p-4;
+}
+
+.recharts-tooltip-item-name, .recharts-tooltip-item-value {
+  color: rgb(var(--text-main)) !important;
+  @apply !font-semibold;
+}
+
+/* Base Animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-enter {
+  animation: fadeInUp 0.5s ease-out forwards;
+}

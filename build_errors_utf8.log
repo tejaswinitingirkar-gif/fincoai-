@@ -1,0 +1,505 @@
+﻿
+> finco@0.1.0 build
+> next build
+
+Γû▓ Next.js 16.1.6 (Turbopack)
+- Environments: .env.local
+
+  Creating an optimized production build ...
+node.exe : 
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (:String) [],    
+ RemoteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+> Build error occurred
+Error: Turbopack build 
+failed with 5 errors:
+./components/dashboards
+/EmployeeDashboard.js:9
+3:83
+Parsing ecmascript 
+source code failed
+[0m [90m 91 |[39m   
+      [33m<[39m[33md
+iv[39m className[33m=
+[39m[32m"glass-panel"
+[39m 
+style[33m=[39m{{ 
+padding[33m:[39m [32
+m'1.5rem'[39m[33m,[3
+9m 
+borderLeft[33m:[39m 
+[32m'4px solid var(--p
+rimary-color)'[39m 
+}}[33m>[39m
+ [90m 92 |[39m       
+    [33m<[39m[33mdiv
+[39m 
+style[33m=[39m{{ 
+fontSize[33m:[39m [3
+2m'0.875rem'[39m[33m,
+[39m color[33m:[39m 
+[32m'var(--text-second
+ary)'[39m }}[33m>[39
+m[33mTotal[39m [33mB
+alance[39m[33m<[39m
+[33m/[39m[33mdiv[39m
+[33m>[39m
+[31m[1m>[22m[39m[9
+0m 93 |[39m           
+[33m<[39m[33mdiv[39
+m style[33m=[39m{{ 
+fontSize[33m:[39m [3
+2m'2rem'[39m[33m,[39
+m 
+fontWeight[33m:[39m 
+[32m'bold'[39m[33m,[
+39m color[33m:[39m 
+balance [33m>=[39m 
+[35m0[39m Γé╣ 
+[32m'#10b981'[39m 
+[33m:[39m 
+[32m'#ef4444'[39m }}
+[33m>[39mΓé╣{balance[
+33m.[39mtoFixed([35m2
+[39m)}[33m<[39m[33m
+/[39m[33mdiv[39m[33
+m>[39m
+ [90m    |[39m       
+                       
+                       
+                       
+       
+[31m[1m^[22m[39m
+ [90m 94 |[39m       
+  [33m<[39m[33m/[39
+m[33mdiv[39m[33m>[3
+9m
+ [90m 95 |[39m       
+  [33m<[39m[33mdiv[
+39m className[33m=[39
+m[32m"glass-panel"[39
+m style[33m=[39m{{ 
+padding[33m:[39m [32
+m'1.5rem'[39m[33m,[3
+9m 
+borderLeft[33m:[39m 
+[32m'4px solid 
+#10b981'[39m 
+}}[33m>[39m
+ [90m 96 |[39m       
+    [33m<[39m[33mdiv
+[39m 
+style[33m=[39m{{ 
+fontSize[33m:[39m [3
+2m'0.875rem'[39m[33m,
+[39m color[33m:[39m 
+[32m'var(--text-second
+ary)'[39m }}[33m>[39
+m[33mTotal[39m [33mI
+ncome[39m[33m<[39m[
+33m/[39m[33mdiv[39m
+[33m>[39m[0m
+
+Unexpected character 
+'Γé╣'
+
+Import traces:
+  Client Component 
+Browser:
+    ./components/dashbo
+ards/EmployeeDashboard.
+js [Client Component 
+Browser]
+    ./app/dashboard/pag
+e.js [Client Component 
+Browser]
+    ./app/dashboard/pag
+e.js [Server Component]
+
+  Client Component SSR:
+    ./components/dashbo
+ards/EmployeeDashboard.
+js [Client Component 
+SSR]
+    ./app/dashboard/pag
+e.js [Client Component 
+SSR]
+    ./app/dashboard/pag
+e.js [Server Component]
+
+
+./components/dashboards
+/FreelancerDashboard.js
+:148:36
+Parsing ecmascript 
+source code failed
+[0m [90m 146 |[39m  
+               [33m<[
+39m[33mdiv[39m classN
+ame[33m=[39m[32m"for
+m-actions"[39m 
+style[33m=[39m{{ 
+marginTop[33m:[39m [
+32m'1rem'[39m[33m,[3
+9m justifyContent[33m:
+[39m 
+[32m'flex-start'[39m 
+}}[33m>[39m
+ [90m 147 |[39m      
+             [33m<[39
+m[33mbutton[39m type
+[33m=[39m[32m"submit"
+[39m className[33m=[
+39m[32m"submit-button"
+[39m disabled[33m=[3
+9m{loadingIncome} 
+style[33m=[39m{{ 
+background[33m:[39m 
+[32m'linear-gradient(13
+5deg, #10b981, #059669)
+'[39m[33m,[39m 
+padding[33m:[39m 
+[32m'0.75rem 
+1.5rem'[39m 
+}}[33m>[39m
+[31m[1m>[22m[39m[9
+0m 148 |[39m          
+           
+{loadingIncome Γé╣ 
+[32m'Adding...'[39m 
+[33m:[39m [32m'Add 
+Income'[39m}
+ [90m     |[39m      
+                       
+       
+[31m[1m^[22m[39m
+ [90m 149 |[39m      
+             [33m<[39
+m[33m/[39m[33mbutton
+[39m[33m>[39m
+ [90m 150 |[39m      
+           [33m<[39m
+[33m/[39m[33mdiv[39m
+[33m>[39m
+ [90m 151 |[39m      
+         [33m<[39m[3
+3m/[39m[33mform[39m
+[33m>[39m[0m
+
+Unexpected character 
+'Γé╣'
+
+Import traces:
+  Client Component 
+Browser:
+    ./components/dashbo
+ards/FreelancerDashboar
+d.js [Client Component 
+Browser]
+    ./app/dashboard/pag
+e.js [Client Component 
+Browser]
+    ./app/dashboard/pag
+e.js [Server Component]
+
+  Client Component SSR:
+    ./components/dashbo
+ards/FreelancerDashboar
+d.js [Client Component 
+SSR]
+    ./app/dashboard/pag
+e.js [Client Component 
+SSR]
+    ./app/dashboard/pag
+e.js [Server Component]
+
+
+./components/dashboards
+/HomemakerDashboard.js:
+148:36
+Parsing ecmascript 
+source code failed
+[0m [90m 146 |[39m  
+               [33m<[
+39m[33mdiv[39m classN
+ame[33m=[39m[32m"for
+m-actions"[39m 
+style[33m=[39m{{ 
+marginTop[33m:[39m [
+32m'1rem'[39m[33m,[3
+9m justifyContent[33m:
+[39m 
+[32m'flex-start'[39m 
+}}[33m>[39m
+ [90m 147 |[39m      
+             [33m<[39
+m[33mbutton[39m type
+[33m=[39m[32m"submit"
+[39m className[33m=[
+39m[32m"submit-button"
+[39m disabled[33m=[3
+9m{loadingIncome} 
+style[33m=[39m{{ 
+background[33m:[39m 
+[32m'linear-gradient(13
+5deg, #10b981, #059669)
+'[39m[33m,[39m 
+padding[33m:[39m 
+[32m'0.75rem 
+1.5rem'[39m 
+}}[33m>[39m
+[31m[1m>[22m[39m[9
+0m 148 |[39m          
+           
+{loadingIncome Γé╣ 
+[32m'Adding...'[39m 
+[33m:[39m [32m'Add 
+Income'[39m}
+ [90m     |[39m      
+                       
+       
+[31m[1m^[22m[39m
+ [90m 149 |[39m      
+             [33m<[39
+m[33m/[39m[33mbutton
+[39m[33m>[39m
+ [90m 150 |[39m      
+           [33m<[39m
+[33m/[39m[33mdiv[39m
+[33m>[39m
+ [90m 151 |[39m      
+         [33m<[39m[3
+3m/[39m[33mform[39m
+[33m>[39m[0m
+
+Unexpected character 
+'Γé╣'
+
+Import traces:
+  Client Component 
+Browser:
+    ./components/dashbo
+ards/HomemakerDashboard
+.js [Client Component 
+Browser]
+    ./app/dashboard/pag
+e.js [Client Component 
+Browser]
+    ./app/dashboard/pag
+e.js [Server Component]
+
+  Client Component SSR:
+    ./components/dashbo
+ards/HomemakerDashboard
+.js [Client Component 
+SSR]
+    ./app/dashboard/pag
+e.js [Client Component 
+SSR]
+    ./app/dashboard/pag
+e.js [Server Component]
+
+
+./components/dashboards
+/OtherDashboard.js:148:
+36
+Parsing ecmascript 
+source code failed
+[0m [90m 146 |[39m  
+               [33m<[
+39m[33mdiv[39m classN
+ame[33m=[39m[32m"for
+m-actions"[39m 
+style[33m=[39m{{ 
+marginTop[33m:[39m [
+32m'1rem'[39m[33m,[3
+9m justifyContent[33m:
+[39m 
+[32m'flex-start'[39m 
+}}[33m>[39m
+ [90m 147 |[39m      
+             [33m<[39
+m[33mbutton[39m type
+[33m=[39m[32m"submit"
+[39m className[33m=[
+39m[32m"submit-button"
+[39m disabled[33m=[3
+9m{loadingIncome} 
+style[33m=[39m{{ 
+background[33m:[39m 
+[32m'linear-gradient(13
+5deg, #10b981, #059669)
+'[39m[33m,[39m 
+padding[33m:[39m 
+[32m'0.75rem 
+1.5rem'[39m 
+}}[33m>[39m
+[31m[1m>[22m[39m[9
+0m 148 |[39m          
+           
+{loadingIncome Γé╣ 
+[32m'Adding...'[39m 
+[33m:[39m [32m'Add 
+Income'[39m}
+ [90m     |[39m      
+                       
+       
+[31m[1m^[22m[39m
+ [90m 149 |[39m      
+             [33m<[39
+m[33m/[39m[33mbutton
+[39m[33m>[39m
+ [90m 150 |[39m      
+           [33m<[39m
+[33m/[39m[33mdiv[39m
+[33m>[39m
+ [90m 151 |[39m      
+         [33m<[39m[3
+3m/[39m[33mform[39m
+[33m>[39m[0m
+
+Unexpected character 
+'Γé╣'
+
+Import traces:
+  Client Component 
+Browser:
+    ./components/dashbo
+ards/OtherDashboard.js 
+[Client Component 
+Browser]
+    ./app/dashboard/pag
+e.js [Client Component 
+Browser]
+    ./app/dashboard/pag
+e.js [Server Component]
+
+  Client Component SSR:
+    ./components/dashbo
+ards/OtherDashboard.js 
+[Client Component SSR]
+    ./app/dashboard/pag
+e.js [Client Component 
+SSR]
+    ./app/dashboard/pag
+e.js [Server Component]
+
+
+./components/dashboards
+/StudentDashboard.js:14
+8:36
+Parsing ecmascript 
+source code failed
+[0m [90m 146 |[39m  
+               [33m<[
+39m[33mdiv[39m classN
+ame[33m=[39m[32m"for
+m-actions"[39m 
+style[33m=[39m{{ 
+marginTop[33m:[39m [
+32m'1rem'[39m[33m,[3
+9m justifyContent[33m:
+[39m 
+[32m'flex-start'[39m 
+}}[33m>[39m
+ [90m 147 |[39m      
+             [33m<[39
+m[33mbutton[39m type
+[33m=[39m[32m"submit"
+[39m className[33m=[
+39m[32m"submit-button"
+[39m disabled[33m=[3
+9m{loadingIncome} 
+style[33m=[39m{{ 
+background[33m:[39m 
+[32m'linear-gradient(13
+5deg, #10b981, #059669)
+'[39m[33m,[39m 
+padding[33m:[39m 
+[32m'0.75rem 
+1.5rem'[39m 
+}}[33m>[39m
+[31m[1m>[22m[39m[9
+0m 148 |[39m          
+           
+{loadingIncome Γé╣ 
+[32m'Adding...'[39m 
+[33m:[39m [32m'Add 
+Income'[39m}
+ [90m     |[39m      
+                       
+       
+[31m[1m^[22m[39m
+ [90m 149 |[39m      
+             [33m<[39
+m[33m/[39m[33mbutton
+[39m[33m>[39m
+ [90m 150 |[39m      
+           [33m<[39m
+[33m/[39m[33mdiv[39m
+[33m>[39m
+ [90m 151 |[39m      
+         [33m<[39m[3
+3m/[39m[33mform[39m
+[33m>[39m[0m
+
+Unexpected character 
+'Γé╣'
+
+Import traces:
+  Client Component 
+Browser:
+    ./components/dashbo
+ards/StudentDashboard.j
+s [Client Component 
+Browser]
+    ./app/dashboard/pag
+e.js [Client Component 
+Browser]
+    ./app/dashboard/pag
+e.js [Server Component]
+
+  Client Component SSR:
+    ./components/dashbo
+ards/StudentDashboard.j
+s [Client Component 
+SSR]
+    ./app/dashboard/pag
+e.js [Client Component 
+SSR]
+    ./app/dashboard/pag
+e.js [Server Component]
+
+
+    at <unknown> (./com
+ponents/dashboards/Empl
+oyeeDashboard.js:93:83)
+    at <unknown> (./com
+ponents/dashboards/Free
+lancerDashboard.js:148:
+36)
+    at <unknown> (./com
+ponents/dashboards/Home
+makerDashboard.js:148:3
+6)
+    at <unknown> (./com
+ponents/dashboards/Othe
+rDashboard.js:148:36)
+    at <unknown> (./com
+ponents/dashboards/Stud
+entDashboard.js:148:36)
